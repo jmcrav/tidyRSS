@@ -43,6 +43,7 @@ rss_parse <- function(response, list, clean_tags, parse_dates) {
     item_pub_date = map(res_entry, "pubDate", .default = def) %>% unlist(),
     item_guid = map(res_entry, "guid", .default = def) %>% unlist(),
     item_author = map(res_entry, "author", .default = def),
+    item_creator = map(res_entry, "creator", .default = def),
     item_category = map(res_entry_xml, ~ {
       xml_find_all(.x, "category") %>% map(xml_text)
     }),
