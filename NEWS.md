@@ -1,3 +1,5 @@
+# tidyRSS (development version)
+
 # tidyRSS 2.0.7
 
 tidyRSS v2.0.7 (Release date: 05/03/2023)
